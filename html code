@@ -1,0 +1,89 @@
+# 1. Check Git Version
+git version
+
+# 2. Clone Repository
+git clone https://github.com/ashwini038/SE-Lab-04.git
+
+# 3. Open Repository
+cd SE-Lab-04
+
+# 4. Create index.html
+touch index.html
+
+# 5. Open Folder
+explorer
+
+# 6. Add File
+git add index.html
+
+# 7. Commit Changes
+git commit -m "Added index file"
+
+# 8. Configure Username
+git config --global user.name "Ashwini Kolape"
+
+# 9. Configure Email
+git config --global user.email "ashiwinikolape@gmail.com"
+
+# 10. Push Main Branch
+git push origin main
+
+# 11. Create Feature Branch
+git checkout -b feature-login
+
+# 12. Check Branches
+git branch
+
+# 13. Switch Feature Branch
+git checkout feature-login
+
+# 14. Create Login Page
+touch login.html
+
+# 15. Add Files
+git add .
+
+# 16. Commit Login Page
+git commit -m "Added login page"
+
+# 17. Push Feature Branch
+git push origin feature-login
+
+# 18. Switch Main Branch
+git checkout main
+
+# 19. Pull Latest Changes
+git pull origin main
+
+# 20. Delete Local Branch
+git branch -d feature-login
+
+# 21. Delete Remote Branch
+git push origin --delete feature-login
+
+# 22. Commit Responsiveness
+git commit -m "Fixed login responsiveness #1"
+
+# 23. Check Status
+git status
+
+# 24. Check Commit History
+git log --oneline
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <form>
+        <input type="text" placeholder="Username">
+        <br><br>
+        <input type="password" placeholder="Password">
+        <br><br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
